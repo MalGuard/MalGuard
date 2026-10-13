@@ -8,7 +8,7 @@ s=bpy.context.scene
 s.render.engine='CYCLES'; s.cycles.samples=48; s.cycles.use_denoising=False
 s.render.resolution_x=480; s.render.resolution_y=480; s.render.resolution_percentage=100
 s.render.image_settings.file_format='PNG'; s.render.film_transparent=True
-s.world.color=(.04,.05,.09)
+s.world.color=(.3,.35,.45)
 s.view_settings.view_transform='AgX'
 def mat(n,c,metal=0,emission=0):
  m=bpy.data.materials.new(n); m.diffuse_color=(*c,1); m.use_nodes=True
@@ -16,8 +16,8 @@ def mat(n,c,metal=0,emission=0):
  p.inputs['Emission Color'].default_value=(*c,1); p.inputs['Emission Strength'].default_value=emission
  return m
 metal=mat('Obsidian titanium',(.023,.041,.085),.88)
-teal=mat('Ion cyan',(.025,.85,.73),.7,2)
-purple=mat('Ultraviolet',(.38,.08,.95),.7,2)
+teal=mat('Brand cyan orbit',(0,.32,.62),.5,.08)
+purple=mat('Royal blue orbit',(.018,.065,.48),.55,.08)
 # Extrude the official SVG paths exactly, preserving both brand colors.
 import xml.etree.ElementTree as ET, re
 shield=bpy.data.objects.new('Official MalGuard logo',None); bpy.context.collection.objects.link(shield)
@@ -47,7 +47,7 @@ for i in range(5):
 for pos,col,power,size in [((-3,-4,5),(.2,.75,1),850,5),((4,-1,2),(.6,.15,1),1000,4),((0,3,3),(.1,1,.7),1200,3)]:
  bpy.ops.object.light_add(type='AREA',location=pos); l=bpy.context.object; l.data.energy=power; l.data.color=col; l.data.shape='DISK'; l.data.size=size; l.rotation_euler=(Vector((0,0,0))-l.location).to_track_quat('-Z','Y').to_euler()
 bpy.ops.object.camera_add(location=(.3,-8.5,3.15)); cam=bpy.context.object; cam.rotation_euler=(Vector((0,0,.12))-cam.location).to_track_quat('-Z','Y').to_euler(); cam.data.type='ORTHO'; cam.data.ortho_scale=4.55; s.camera=cam
-s.use_nodes=True; nodes=s.node_tree.nodes; nodes.clear(); rl=nodes.new('CompositorNodeRLayers'); gl=nodes.new('CompositorNodeGlare'); gl.glare_type='FOG_GLOW'; gl.quality='HIGH'; gl.threshold=1; gl.size=7; co=nodes.new('CompositorNodeComposite'); s.node_tree.links.new(rl.outputs['Image'],gl.inputs['Image']); s.node_tree.links.new(gl.outputs['Image'],co.inputs['Image'])
+s.use_nodes=True; nodes=s.node_tree.nodes; nodes.clear(); rl=nodes.new('CompositorNodeRLayers'); gl=nodes.new('CompositorNodeGlare'); gl.glare_type='FOG_GLOW'; gl.quality='HIGH'; gl.threshold=3; gl.size=7; co=nodes.new('CompositorNodeComposite'); s.node_tree.links.new(rl.outputs['Image'],gl.inputs['Image']); s.node_tree.links.new(gl.outputs['Image'],co.inputs['Image'])
 count=int(os.environ.get('FRAME_COUNT','90'))
 for k in range(count):
  t=2*math.pi*k/90
@@ -56,4 +56,4 @@ for k in range(count):
   o.rotation_euler=(rot[0]+.22*math.sin(t+i),rot[1]+.3*math.cos(t+i),rot[2]+t*(1 if i==0 else -1))
  for i,o in enumerate(sats):
   a=t+i*2*math.pi/5; o.location=(1.66*math.cos(a),.8*math.sin(a),1.15*math.sin(a+.6))
- s.render.filepath=str(ROOT/f'render/emblem-{k:03d}.png'); bpy.ops.render.render(write_still=True)
+ s.render.filepath=str(ROOT/f'render/emblem-light-{k:03d}.png'); bpy.ops.render.render(write_still=True)

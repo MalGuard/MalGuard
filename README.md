@@ -2,10 +2,10 @@
 
 <a href="https://malguard.github.io/">
   <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/malguard-3d-mobile-poster.png" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/malguard-3d-poster.png" />
-    <source media="(max-width: 600px)" srcset="./assets/malguard-3d-mobile.gif" />
-    <img src="./assets/malguard-3d.gif" alt="MalGuard — Inspect before you trust. The original blue and cyan MalGuard logo, rendered in 3D with revolving luminous orbits." width="100%" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/malguard-light-3d-mobile-poster.png" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/malguard-light-3d-poster.png" />
+    <source media="(max-width: 600px)" srcset="./assets/malguard-light-3d-mobile.gif" />
+    <img src="./assets/malguard-light-3d.gif" alt="MalGuard — Inspect before you trust. The original blue and cyan MalGuard logo, rendered in 3D with revolving luminous orbits." width="100%" />
   </picture>
 </a>
 
@@ -14,8 +14,8 @@
 </div>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/about-mobile.svg" />
-  <img src="./assets/about.svg" alt="Mohammad Reza Azarderakhsh — creator of MalGuard. Defensive engineering and safer gaming. Building tools that explain evidence, uncertainty and the next step." width="100%" />
+  <source media="(max-width: 600px)" srcset="./assets/about-mobile-light.svg" />
+  <img src="./assets/about-light.svg" alt="Mohammad Reza Azarderakhsh — creator of MalGuard. Defensive engineering and safer gaming. Building tools that explain evidence, uncertainty and the next step." width="100%" />
 </picture>
 
 <p dir="rtl" align="right">
@@ -25,19 +25,19 @@
 ### Selected work
 
 <p align="center">
-  <a href="https://github.com/MalGuard/malguard-core"><img src="./assets/card-core.svg" alt="MalGuard Core — open-source defensive inspection, integrity and isolation foundations. MIT license." width="400" /></a>
-  <a href="https://github.com/MalGuard/GTA-guard.github.io"><img src="./assets/card-gta.svg" alt="GTA Guard — the first MalGuard product focus, for safer game-mod analysis." width="400" /></a>
+  <a href="https://github.com/MalGuard/malguard-core"><img src="./assets/card-core-light.svg" alt="MalGuard Core — open-source defensive inspection, integrity and isolation foundations. MIT license." width="400" /></a>
+  <a href="https://github.com/MalGuard/GTA-guard.github.io"><img src="./assets/card-gta-light.svg" alt="GTA Guard — the first MalGuard product focus, for safer game-mod analysis." width="400" /></a>
 </p>
 <p align="center">
-  <a href="https://malguard.github.io/"><img src="./assets/card-website.svg" alt="Official MalGuard website — products, documentation, release status and trust center." width="400" /></a>
-  <a href="https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md"><img src="./assets/card-collaborate.svg" alt="Build with us — explore contribution guidelines and public source code." width="400" /></a>
+  <a href="https://malguard.github.io/"><img src="./assets/card-website-light.svg" alt="Official MalGuard website — products, documentation, release status and trust center." width="400" /></a>
+  <a href="https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md"><img src="./assets/card-collaborate-light.svg" alt="Build with us — explore contribution guidelines and public source code." width="400" /></a>
 </p>
 
 ### How I approach security
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/principles-mobile.svg" />
-  <img src="./assets/principles.svg" alt="Inspect files, archives and scripts; verify evidence and capability; isolate only with verified support; report findings and limitations." width="100%" />
+  <source media="(max-width: 600px)" srcset="./assets/principles-mobile-light.svg" />
+  <img src="./assets/principles-light.svg" alt="Inspect files, archives and scripts; verify evidence and capability; isolate only with verified support; report findings and limitations." width="100%" />
 </picture>
 
 **Unknown does not mean safe.** A clean scan cannot prove that a file is harmless. If required isolation is unavailable, the result must reflect that uncertainty.
@@ -58,7 +58,7 @@ Explore [MalGuard Core](https://github.com/MalGuard/malguard-core), the [website
 
 <div align="center">
 
-<img src="./assets/footer.svg" alt="Security before trust. Evidence first. Clear limits. Better decisions." width="100%" />
+<img src="./assets/footer-light.svg" alt="Security before trust. Evidence first. Clear limits. Better decisions." width="100%" />
 
 [Contribute](https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md) &nbsp; · &nbsp; [Responsible disclosure](https://github.com/MalGuard/malguard-core/blob/main/SECURITY.md) &nbsp; · &nbsp; [Privacy](https://malguard.github.io/privacy.html)
 
