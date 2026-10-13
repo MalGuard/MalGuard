@@ -1,96 +1,67 @@
 <div align="center">
 
 <a href="https://malguard.github.io/">
-  <img src="./assets/malguard-hero.svg" alt="Animated MalGuard cybersecurity banner with radar, shield and neon scanning effects" width="100%" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/malguard-3d-mobile-poster.png" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/malguard-3d-poster.png" />
+    <source media="(max-width: 600px)" srcset="./assets/malguard-3d-mobile.gif" />
+    <img src="./assets/malguard-3d.gif" alt="MalGuard — Inspect before you trust. The original blue and cyan MalGuard logo, rendered in 3D with revolving luminous orbits." width="100%" />
+  </picture>
 </a>
 
-### Security starts with evidence, not assumptions.
-
-**Game-mod security** &nbsp; · &nbsp; **Defensive engineering** &nbsp; · &nbsp; **Fail-closed design**
-
-[**Official Website ↗**](https://malguard.github.io/) &nbsp; • &nbsp; [**Documentation ↗**](https://malguard.github.io/docs.html) &nbsp; • &nbsp; [**Security Core ↗**](https://github.com/MalGuard/malguard-core)
+[**Website**](https://malguard.github.io/) &nbsp; · &nbsp; [**Security Core**](https://github.com/MalGuard/malguard-core) &nbsp; · &nbsp; [**Documentation**](https://malguard.github.io/docs.html) &nbsp; · &nbsp; [**Trust Center**](https://malguard.github.io/trust.html)
 
 </div>
 
----
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/about-mobile.svg" />
+  <img src="./assets/about.svg" alt="Mohammad Reza Azarderakhsh — creator of MalGuard. Defensive engineering and safer gaming. Building tools that explain evidence, uncertainty and the next step." width="100%" />
+</picture>
 
-## 🛡️ Meet MalGuard
+<p dir="rtl" align="right">
+من محمدرضا هستم، سازندهٔ <strong>MalGuard</strong>. ابزارهای دفاعی برای بررسی فایل‌ها و مودهای بازی می‌سازم؛ با تمرکز بر شواهد روشن، حریم خصوصی و تصمیم‌گیری آگاهانه. هدفم ساده است: <strong>قبل از اعتماد، بررسی کن.</strong>
+</p>
 
-**MalGuard** is an open-source defensive security project focused on helping people inspect potentially risky game modifications. Our main product focus is **GTA Guard**.
+### Selected work
 
-We build around a simple principle: **unknown does not mean safe**. A clean static scan cannot guarantee that a file is harmless, and a sandbox check must not be marked complete if its isolation requirements were not met.
+<p align="center">
+  <a href="https://github.com/MalGuard/malguard-core"><img src="./assets/card-core.svg" alt="MalGuard Core — open-source defensive inspection, integrity and isolation foundations. MIT license." width="400" /></a>
+  <a href="https://github.com/MalGuard/GTA-guard.github.io"><img src="./assets/card-gta.svg" alt="GTA Guard — the first MalGuard product focus, for safer game-mod analysis." width="400" /></a>
+</p>
+<p align="center">
+  <a href="https://malguard.github.io/"><img src="./assets/card-website.svg" alt="Official MalGuard website — products, documentation, release status and trust center." width="400" /></a>
+  <a href="https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md"><img src="./assets/card-collaborate.svg" alt="Build with us — explore contribution guidelines and public source code." width="400" /></a>
+</p>
 
-<table>
-  <tr>
-    <td align="center" width="33%">
-      <h3>🔍 Inspect</h3>
-      <p>Examine file types, archives, scripts and executables with bounded input handling.</p>
-    </td>
-    <td align="center" width="33%">
-      <h3>🧱 Verify isolation</h3>
-      <p>Require evidence of an available and suitable isolation backend before any isolated execution.</p>
-    </td>
-    <td align="center" width="34%">
-      <h3>⚖️ Report</h3>
-      <p>Separate <code>SAFE</code>, <code>SUSPICIOUS</code>, <code>MALICIOUS</code> and <code>INCONCLUSIVE</code> findings.</p>
-    </td>
-  </tr>
-</table>
+### How I approach security
 
-## 🎮 Featured project: GTA Guard
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/principles-mobile.svg" />
+  <img src="./assets/principles.svg" alt="Inspect files, archives and scripts; verify evidence and capability; isolate only with verified support; report findings and limitations." width="100%" />
+</picture>
 
-> A security-focused approach to reviewing GTA game modifications, plugins and related files. Designed to help users make informed decisions, not to promise that every threat will be detected.
+**Unknown does not mean safe.** A clean scan cannot prove that a file is harmless. If required isolation is unavailable, the result must reflect that uncertainty.
 
-**Project links:** [GTA Guard](https://github.com/MalGuard/GTA-guard.github.io) · [MalGuard Core](https://github.com/MalGuard/malguard-core) · [Website](https://malguard.github.io/)
+<details>
+<summary><strong>More about the work</strong></summary>
 
-## ⚡ Our analysis philosophy
+MalGuard is an open-source defensive security project focused on safer game-mod analysis, local scanning and fail-closed isolation. **GTA Guard** is the first product focus.
 
-<img src="./assets/malguard-workflow.svg" alt="Animated illustration of the MalGuard defensive workflow: inspect, verify, isolate only when certified, and report limitations" width="100%" />
+- **Inspection:** file types, archives, scripts and executables, with bounded input handling.
+- **Integrity:** runtime package verification, signed-update enforcement and release provenance.
+- **Isolation:** explicit capability checks and fail-closed routing.
+- **Development:** harmless synthetic fixtures, regression checks and reviewed contributions.
 
-```text
-UNTRUSTED INPUT
-       |
-       v
-  FILE INSPECTION
-       |
-       v
-  CHECK EVIDENCE + CAPABILITY
-       |
-       +-- required isolation unavailable --> INCONCLUSIVE / FAIL CLOSED
-       |
-       v
-  CAUTIOUS SECURITY VERDICT
-       |
-       v
-  TRANSPARENT REPORT
-```
+Explore [MalGuard Core](https://github.com/MalGuard/malguard-core), the [website source](https://github.com/MalGuard/malguard.github.io), and [GTA Guard's web repository](https://github.com/MalGuard/GTA-guard.github.io).
 
-**Engineering priorities:** verified evidence · safe synthetic testing · privacy-conscious design · explicit failure states · maintainability · regression checks.
-
-## 📂 Explore our work
-
-| Repository | Focus |
-| :--- | :--- |
-| [**malguard-core**](https://github.com/MalGuard/malguard-core) | Defensive scanners, isolation architecture and security checks |
-| [**malguard.github.io**](https://github.com/MalGuard/malguard.github.io) | Public website, project information and documentation |
-| [**GTA-guard.github.io**](https://github.com/MalGuard/GTA-guard.github.io) | GTA Guard web presence |
-| [**malware-ai**](https://github.com/MalGuard/malware-ai) | Related security and AI development |
-| [**MalGuard**](https://github.com/MalGuard/MalGuard) | This animated GitHub profile |
-
-## 🤝 Responsible collaboration
-
-Thoughtful contributions and careful security review are welcome. Please consult [CONTRIBUTING.md](https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md), [SECURITY.md](https://github.com/MalGuard/malguard-core/blob/main/SECURITY.md) and [PRIVACY.md](https://github.com/MalGuard/malguard-core/blob/main/PRIVACY.md) in the core project.
-
-**Please do not submit live malware to issues or CI, or publicly disclose unpatched vulnerabilities.**
+</details>
 
 <div align="center">
 
----
+<img src="./assets/footer.svg" alt="Security before trust. Evidence first. Clear limits. Better decisions." width="100%" />
 
-### Build defensively. Verify relentlessly. Report honestly.
+[Contribute](https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md) &nbsp; · &nbsp; [Responsible disclosure](https://github.com/MalGuard/malguard-core/blob/main/SECURITY.md) &nbsp; · &nbsp; [Privacy](https://malguard.github.io/privacy.html)
 
-[Website](https://malguard.github.io/) &nbsp; · &nbsp; [Documentation](https://malguard.github.io/docs.html) &nbsp; · &nbsp; [Source Code](https://github.com/MalGuard/malguard-core)
-
-<sub>The animations are illustrations, not live security scans, product certifications or real-time telemetry.</sub>
+<sub>The animation is original brand artwork, not live scan telemetry.</sub>
 
 </div>
