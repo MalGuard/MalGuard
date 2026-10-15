@@ -60,7 +60,7 @@ Explore [MalGuard Core](https://github.com/MalGuard/malguard-core), the [website
 
 <img src="./assets/footer-light.svg" alt="Security before trust. Evidence first. Clear limits. Better decisions." width="100%" />
 
-[Contribute](https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md) &nbsp; · &nbsp; [Responsible disclosure](https://github.com/MalGuard/malguard-core/blob/main/SECURITY.md) &nbsp; · &nbsp; [Privacy](https://malguard.site/privacy.html)
+[Press kit](https://github.com/MalGuard/MalGuard/blob/main/PRESS_KIT.md) &nbsp; · &nbsp; [Contribute](https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md) &nbsp; · &nbsp; [Responsible disclosure](https://github.com/MalGuard/malguard-core/blob/main/SECURITY.md) &nbsp; · &nbsp; [Privacy](https://malguard.site/privacy.html)
 
 <sub>The animation is original brand artwork, not live scan telemetry.</sub>
 
