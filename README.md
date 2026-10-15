@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://malguard.github.io/">
+<a href="https://malguard.site/">
   <picture>
     <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/malguard-light-3d-mobile-poster.png" />
     <source media="(prefers-reduced-motion: reduce)" srcset="./assets/malguard-light-3d-poster.png" />
@@ -9,7 +9,7 @@
   </picture>
 </a>
 
-[**Website**](https://malguard.github.io/) &nbsp; · &nbsp; [**Security Core**](https://github.com/MalGuard/malguard-core) &nbsp; · &nbsp; [**Documentation**](https://malguard.github.io/docs.html) &nbsp; · &nbsp; [**Trust Center**](https://malguard.github.io/trust.html)
+[**Website**](https://malguard.site/) &nbsp; · &nbsp; [**Security Core**](https://github.com/MalGuard/malguard-core) &nbsp; · &nbsp; [**Documentation**](https://malguard.site/docs.html) &nbsp; · &nbsp; [**Trust Center**](https://malguard.site/trust.html)
 
 </div>
 
@@ -29,7 +29,7 @@
   <a href="https://github.com/MalGuard/GTA-guard.github.io"><img src="./assets/card-gta-light.svg" alt="GTA Guard — the first MalGuard product focus, for safer game-mod analysis." width="400" /></a>
 </p>
 <p align="center">
-  <a href="https://malguard.github.io/"><img src="./assets/card-website-light.svg" alt="Official MalGuard website — products, documentation, release status and trust center." width="400" /></a>
+  <a href="https://malguard.site/"><img src="./assets/card-website-light.svg" alt="Official MalGuard website — products, documentation, release status and trust center." width="400" /></a>
   <a href="https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md"><img src="./assets/card-collaborate-light.svg" alt="Build with us — explore contribution guidelines and public source code." width="400" /></a>
 </p>
 
@@ -60,7 +60,7 @@ Explore [MalGuard Core](https://github.com/MalGuard/malguard-core), the [website
 
 <img src="./assets/footer-light.svg" alt="Security before trust. Evidence first. Clear limits. Better decisions." width="100%" />
 
-[Contribute](https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md) &nbsp; · &nbsp; [Responsible disclosure](https://github.com/MalGuard/malguard-core/blob/main/SECURITY.md) &nbsp; · &nbsp; [Privacy](https://malguard.github.io/privacy.html)
+[Contribute](https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md) &nbsp; · &nbsp; [Responsible disclosure](https://github.com/MalGuard/malguard-core/blob/main/SECURITY.md) &nbsp; · &nbsp; [Privacy](https://malguard.site/privacy.html)
 
 <sub>The animation is original brand artwork, not live scan telemetry.</sub>
 
