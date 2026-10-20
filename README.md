@@ -22,6 +22,16 @@
 من محمدرضا هستم، سازندهٔ <strong>MalGuard</strong>. ابزارهای دفاعی برای بررسی فایل‌ها و مودهای بازی می‌سازم؛ با تمرکز بر شواهد روشن، حریم خصوصی و تصمیم‌گیری آگاهانه. هدفم ساده است: <strong>قبل از اعتماد، بررسی کن.</strong>
 </p>
 
+### Open-source contributors wanted 🔐
+
+MalGuard welcomes small, reviewable contributions to **defensive gaming security**. Documentation, accessible developer guides, and harmless synthetic regression tests are especially helpful. You do not need previous MalGuard experience to start.
+
+- **[Find a good first issue](https://github.com/MalGuard/malguard-core/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)** · [Other help wanted](https://github.com/MalGuard/malguard-core/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+- **[Contributor guidelines](https://github.com/MalGuard/malguard-core/blob/main/CONTRIBUTING.md)** · [Open-source core](https://github.com/MalGuard/malguard-core)
+- Examples: [Windows onboarding](https://github.com/MalGuard/malguard-core/issues/124), [focused tests](https://github.com/MalGuard/malguard-core/issues/125), and [honest code-signing documentation](https://github.com/MalGuard/malguard-core/issues/126).
+
+> Please use harmless synthetic test inputs only. Do not upload or execute malware. Vulnerabilities should be [reported privately](https://github.com/MalGuard/malguard-core/security/policy). Contributions are reviewed; no security certification or signing approval is implied.
+
 ### Selected work
 
 <p align="center">
