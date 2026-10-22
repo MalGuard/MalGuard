@@ -1,6 +1,7 @@
 -- Family Circle: execute once in Supabase SQL Editor after creating a project.
 -- DO NOT use a service-role key in the browser. Keep email confirmation enabled.
-create extension if not exists pgcrypto;
+create schema if not exists extensions;
+create extension if not exists pgcrypto with schema extensions;
 create table if not exists public.family_members (
   user_id uuid primary key references auth.users(id) on delete cascade,
   display_name text not null check (char_length(display_name) between 2 and 60),
