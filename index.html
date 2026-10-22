@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101114"><meta name="robots" content="noindex,nofollow">
+<title>دورهمی | خانه‌ی خانواده</title>
+<style>
+:root{color-scheme:dark;--bg:#101114;--panel:#191b20;--panel2:#20232a;--edge:#343640;--text:#f5f3ee;--muted:#a9abb6;--gold:#d4b47c;--green:#75cba9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.85 system-ui,Tahoma,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}
+button:disabled{opacity:.45;cursor:not-allowed}a{color:var(--gold)}
+.shell{min-height:100dvh;display:grid;grid-template-columns:310px minmax(0,1fr)}
+.sidebar{background:#15161a;border-left:1px solid var(--edge);padding:24px 17px;display:flex;flex-direction:column;gap:14px}
+.brand{display:flex;align-items:center;gap:13px;padding:8px 9px 24px;border-bottom:1px solid var(--edge)}
+.mark{display:grid;place-items:center;width:49px;height:49px;border-radius:17px;background:linear-gradient(145deg,#e9cf9b,#b98b52);color:#231b13;font-size:25px}
+h1,h2,h3,p{margin:0}h1{font-size:21px;line-height:1.5}h2{font-size:23px}h3{font-size:16px}.sub,.muted{color:var(--muted);font-size:13px}
+.nav{display:grid;gap:7px}.nav button{border:1px solid transparent;color:#c7c8d0;background:transparent;text-align:right;border-radius:12px;padding:10px 15px}
+.nav button.active{color:#fff;background:var(--panel2);border-color:#41404a}
+.sidefoot{margin-top:auto;border-top:1px solid var(--edge);padding-top:18px;display:grid;gap:10px}
+.main{min-width:0;display:flex;flex-direction:column}.top{padding:20px 30px;border-bottom:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;gap:14px}.top h2{font-size:18px}
+.pill{border:1px solid #665137;border-radius:99px;padding:4px 12px;color:var(--gold);font-size:12px}
+.content{width:min(1090px,100%);margin:0 auto;padding:28px;flex:1}.intro{display:grid;gap:12px;margin:12px 0 30px}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:1px}
+.intro h2{font-size:clamp(28px,4vw,44px);line-height:1.5}.intro p{color:var(--muted);max-width:650px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card,.panel{border:1px solid var(--edge);border-radius:18px;background:linear-gradient(155deg,#23242b,#191a1f);padding:22px}
+.card .ico{font-size:26px}.card h3{margin:10px 0 5px}.card p{color:var(--muted);font-size:13px}
+.panel{margin-top:20px}.paneltitle{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.btn{background:var(--gold);border:1px solid var(--gold);color:#201b16;border-radius:11px;padding:10px 17px;font-weight:750}
+.btn.alt{background:#292a31;color:var(--text);border-color:#45454d}.btn.ghost{background:transparent;border-color:var(--edge);color:var(--text)}
+.btn.small{font-size:12px;padding:6px 11px}.row{display:flex;gap:11px;align-items:center;flex-wrap:wrap}
+.field{display:grid;gap:7px;margin:12px 0;font-size:13px;color:var(--muted)}input,textarea,select{width:100%;background:#101115;border:1px solid #42434b;color:var(--text);padding:12px 13px;border-radius:12px;outline:0}
+input:focus,textarea:focus{border-color:var(--gold)}textarea{resize:vertical;min-height:86px}
+.authbox{width:min(430px,100%);margin:8vh auto;padding:26px;border:1px solid var(--edge);border-radius:20px;background:var(--panel)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.chatlayout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:15px;min-height:540px}
+.chatlist{padding:12px}.chatlist button{width:100%;padding:11px;text-align:right;border:0;border-radius:12px;background:transparent;color:var(--text);margin-bottom:4px}
+.chatlist button.active,.chatlist button:hover{background:#303139}.chatwindow{display:flex;flex-direction:column;min-height:520px;max-height:75dvh;padding:0}
+.chathead{border-bottom:1px solid var(--edge);padding:15px 20px}.messages{flex:1;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:10px}
+.bubble{max-width:82%;width:max-content;padding:9px 14px;border:1px solid #44454b;border-radius:15px;background:#272930;white-space:pre-wrap;overflow-wrap:anywhere}
+.bubble.mine{align-self:flex-start;background:#413727;border-color:#6c5839}.bubble .meta{font-size:10px;color:#c3bdb2;margin-top:5px}
+.sendform{border-top:1px solid var(--edge);display:flex;gap:9px;padding:12px}.sendform input{flex:1}
+.member{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px;border-bottom:1px solid #37383e}
+.avatar{background:linear-gradient(135deg,#6b5540,#3f4654);border-radius:50%;width:39px;height:39px;display:grid;place-items:center;flex:none}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}.photo{overflow:hidden;border-radius:14px;background:var(--panel2);border:1px solid var(--edge)}
+.photo img{display:block;width:100%;height:155px;object-fit:cover}.photo p{padding:8px;font-size:12px}
+.empty{text-align:center;padding:36px;color:var(--muted)}.notice{background:#2c281e;border:1px solid #706044;border-radius:13px;padding:12px 15px;color:#ebd6ad;font-size:13px}
+.banner{background:radial-gradient(circle at 15% 50%,#6d5434 0,transparent 46%),linear-gradient(135deg,#252833,#15171b);border:1px solid #534936;min-height:195px;border-radius:21px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:30px;margin:18px 0}
+.banner .big{font-size:60px}.list{display:grid;gap:10px}.smalltext{font-size:12px}.code{font:15px ui-monospace,monospace;direction:ltr;display:block;word-break:break-all;background:#111;padding:13px;border-radius:10px;margin:10px 0}
+#toast{position:fixed;left:16px;bottom:20px;background:#353942;color:white;z-index:99;padding:12px 18px;border-radius:12px;display:none;max-width:350px}
+@media(max-width:870px){.shell{grid-template-columns:1fr}.sidebar{border-left:0;border-bottom:1px solid var(--edge);padding:10px 14px;gap:5px}.brand{padding:4px 5px 8px;border:0}.brand .sub{display:none}.mark{height:36px;width:36px;border-radius:10px;font-size:19px}.sidefoot{display:none}.nav{display:flex;overflow-x:auto;gap:5px}.nav button{white-space:nowrap;padding:6px 12px}.top{padding:13px 18px}.content{padding:16px}.cards{grid-template-columns:1fr}.chatlayout{grid-template-columns:1fr}.chatlist{display:flex;overflow-x:auto;gap:5px}.chatlist button{min-width:150px}.chatwindow{min-height:55dvh}.grid2{grid-template-columns:1fr}.banner{padding:20px;min-height:140px}.banner .big{display:none}}
+</style>
+<script src="./config.js"></script>
+</head><body><div id="app"></div><div id="toast" role="status" aria-live="polite"></div>
+<script type="module">
+const config=window.FAMILY_CONFIG||{};
+const ready=Boolean(config.supabaseUrl && config.supabaseAnonKey && config.supabaseUrl.startsWith('https://'));
+let sb=null,user=null,me=null,members=[],rooms=[],participants=[],messages=[],photos=[],roomId=null,tab='home',inviteCode='',channel=null,loading=false;
+const app=document.getElementById('app');
+const esc=(v)=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const named=(id)=>members.find(x=>x.user_id===id)?.display_name||'عضو خانواده';
+function toast(t){const n=document.getElementById('toast');n.textContent=t;n.style.display='block';clearTimeout(window.__toastTimer);window.__toastTimer=setTimeout(()=>n.style.display='none',5000)}
+function nav(label,id){return '<button data-tab="'+id+'" class="'+(tab===id?'active':'')+'">'+label+'</button>'}
+function frame(body){
+app.innerHTML='<div class="shell"><aside class="sidebar"><div class="brand"><div class="mark">✺</div><div><h1>دورهمی</h1><div class="sub">خانه‌ی خصوصی خانواده</div></div></div><nav class="nav">'+nav('⌂ خانه','home')+nav('◉ پیام‌ها','chats')+nav('▦ گالری','gallery')+nav('♧ اعضا','members')+(me?.role==='admin'?nav('✧ دعوت‌نامه','invites'):'')+'</nav><div class="sidefoot"><span class="muted">'+esc(me?.display_name||'نسخه نمایشی')+'</span>'+(user?'<button class="btn alt small" data-act="logout">خروج از حساب</button>':'')+'</div></aside><section class="main"><header class="top"><h2>'+({home:'خانه‌ی ما',chats:'پیام‌های خانوادگی',gallery:'آلبوم خاطرات',members:'اعضای خانواده',invites:'مدیریت دعوت‌ها'}[tab]||'دورهمی')+'</h2><span class="pill">'+(ready?'خصوصی • با عضویت':'پیش‌نمایش طراحی')+'</span></header><div class="content">'+body+'</div></section></div>';
+}
+function intro(){return '<div class="intro"><span class="eyebrow">AZARDARKHSH FAMILY SPACE</span><h2>کنار هم، حتی از راه دور.</h2><p>پیام‌ها، لحظه‌ها و خاطرات خانواده، در فضایی آرام و اختصاصی برای عزیزان شما.</p></div>'}
+function demo(){
+frame(intro()+'<div class="notice">این یک پیش‌نمایش از ظاهر سایت است. در این نسخه، ارسال پیام، ثبت‌نام و ذخیره عکس فعال نیست. برای راه‌اندازی واقعی باید پایگاه داده خصوصی وصل شود.</div><div class="banner"><div><span class="eyebrow">به دورهمی خوش آمدید</span><h2>یک خانه برای همه‌ی ما</h2><p class="muted">خصوصی، ساده، دوستانه</p></div><div class="big">♡</div></div><div class="cards"><div class="card"><div class="ico">💬</div><h3>پیام‌های خصوصی</h3><p>گفت‌وگوی دونفره و گروهی، بدون نمایش عمومی پیام‌ها</p></div><div class="card"><div class="ico">▧</div><h3>آلبوم مشترک</h3><p>تصاویر اختصاصی، با دسترسی محدود به اعضا</p></div><div class="card"><div class="ico">✉</div><h3>فقط با دعوت</h3><p>عضویت با کد تصادفی، یک‌بارمصرف و محدود</p></div></div><div class="panel"><h3>نسخه آزمایشی آماده مشاهده است</h3><p class="muted">هیچ داده خانوادگی واقعی در این پیش‌نمایش ذخیره نمی‌شود. فایل پیکربندی و طرح امنیتی در سورس پروژه قرار دارد.</p></div>');
+}
+function authView(){
+app.innerHTML='<div class="authbox"><div class="brand"><span class="mark">✺</span><div><h1>دورهمی</h1><p class="muted">ورود اعضای خانواده</p></div></div><div class="notice">ثبت حساب به‌معنای عضویت نیست. برای دیدن اطلاعات خانواده به کد دعوت معتبر نیاز است.</div><form id="authForm"><label class="field">ایمیل<input type="email" name="email" required autocomplete="email"></label><label class="field">رمز عبور<input type="password" name="password" required minlength="8" autocomplete="current-password"></label><label class="field">نام نمایشی (فقط موقع ثبت‌نام)<input name="displayName" maxlength="60" placeholder="نام شما"></label><div class="row"><button type="submit" class="btn" name="mode" value="signin">ورود</button><button type="submit" class="btn alt" name="mode" value="signup">ثبت‌نام با دعوت</button></div></form></div>';
+}
+function inviteEntry(){
+app.innerHTML='<div class="authbox"><h2>تأیید دعوت‌نامه</h2><p class="muted">حساب شما ساخته شده؛ هنوز اجازه دسترسی به خانواده ندارید.</p><form id="redeemForm"><label class="field">نامی که خانواده می‌بیند<input name="name" required minlength="2" maxlength="60"></label><label class="field">کد دعوت یک‌بارمصرف<input name="code" dir="ltr" required maxlength="100" autocomplete="off"></label><button class="btn">تأیید عضویت</button></form><button data-act="logout" class="btn alt small">خروج</button></div>';
+}
+function roomName(r){if(r.kind==='group')return r.title||'گروه خانوادگی';const other=participants.find(p=>p.conversation_id===r.id && p.user_id!==user.id);return named(other?.user_id)}
+function home(){return intro()+'<div class="banner"><div><span class="eyebrow">خانواده یعنی همیشه نزدیک بودن</span><h2>به خانه‌ی دیجیتال‌مان خوش آمدی.</h2><p class="muted">مراقب خاطره‌ها و ارتباط‌هایمان هستیم.</p></div><div class="big">♡</div></div><div class="cards"><button class="card" style="text-align:right;color:inherit" data-tab="chats"><div class="ico">💬</div><h3>چت‌های خانوادگی</h3><p>'+rooms.length+' گفتگو</p></button><button class="card" style="text-align:right;color:inherit" data-tab="gallery"><div class="ico">▧</div><h3>گالری خاطره‌ها</h3><p>'+photos.length+' تصویر</p></button><button class="card" style="text-align:right;color:inherit" data-tab="members"><div class="ico">♧</div><h3>جمع خانواده</h3><p>'+members.length+' عضو</p></button></div>'}
+function chatsView(){
+const current=rooms.find(x=>x.id===roomId);
+const list=rooms.map(r=>'<button data-room="'+esc(r.id)+'" class="'+(roomId===r.id?'active':'')+'">◉ '+esc(roomName(r))+'<div class="muted smalltext">'+(r.kind==='group'?'گروه':'گفت‌وگوی خصوصی')+'</div></button>').join('');
+const msg=messages.map(m=>'<div class="bubble '+(m.sender_id===user.id?'mine':'')+'"><div>'+esc(m.body)+'</div><div class="meta">'+esc(named(m.sender_id))+' · '+new Date(m.created_at).toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'})+'</div></div>').join('');
+return '<div class="row" style="margin-bottom:15px"><button class="btn small" data-act="newgroup">+ گروه جدید</button><span class="muted">برای گفت‌وگوی دونفره، عضو موردنظر را از بخش اعضا انتخاب کن.</span></div><div class="chatlayout"><div class="panel chatlist" style="margin:0">'+(list||'<div class="empty">هنوز گفت‌وگویی وجود ندارد.</div>')+'</div><div class="panel chatwindow">'+(current?'<div class="chathead"><b>'+esc(roomName(current))+'</b></div><div class="messages" id="messages">'+(msg||'<div class="empty">اولین پیام را تو بفرست.</div>')+'</div><form id="sendForm" class="sendform"><input name="body" autocomplete="off" maxlength="4000" placeholder="پیامت را بنویس..." required><button class="btn">ارسال</button></form>':'<div class="empty">یک گفتگو را انتخاب کن.</div>')+'</div></div>';
+}
+function galleryView(){return '<div class="panel" style="margin:0"><h3>خاطرات مشترک</h3><p class="muted">عکس‌ها در فضای خصوصی نگهداری می‌شوند. حداکثر ۵ مگابایت برای هر عکس.</p><form id="photoForm" class="grid2"><label class="field">عکس<input type="file" name="photo" accept="image/jpeg,image/png,image/webp" required></label><label class="field">عنوان عکس<input name="caption" maxlength="120"></label><button class="btn" type="submit">افزودن به گالری</button></form></div><div class="panel"><div class="photos">'+(photos.map(p=>'<div class="photo">'+(p.signedUrl?'<img loading="lazy" alt="عکس خانوادگی" src="'+esc(p.signedUrl)+'">':'')+'<p>'+esc(p.caption||'یک خاطره')+'</p></div>').join('')||'<div class="empty">فعلاً عکسی اضافه نشده.</div>')+'</div></div>'}
+function membersView(){return '<div class="panel" style="margin:0"><h3>اعضای تأییدشده</h3><p class="muted">فقط افرادی که دعوت‌نامه معتبر داشته‌اند، اینجا دیده می‌شوند.</p>'+members.map(x=>'<div class="member"><div class="row"><div class="avatar">'+esc(x.display_name[0]||'•')+'</div><div><strong>'+esc(x.display_name)+'</strong><div class="muted">'+(x.role==='admin'?'مدیر':'عضو')+'</div></div></div>'+(x.user_id===user.id?'<span class="muted">شما</span>':'<button class="btn alt small" data-dm="'+esc(x.user_id)+'">پیام خصوصی</button>')+'</div>').join('')+'</div>'}
+function invitesView(){return '<div class="panel" style="margin:0"><h3>ساخت دعوت‌نامه شخصی</h3><p class="muted">برای هر عضو یک کد اختصاصی صادر می‌شود که فقط برای همان ایمیل معتبر است و پس از ۴۸ ساعت منقضی می‌شود.</p><form id="inviteForm"><label class="field">ایمیل عضو خانواده<input type="email" name="email" required></label><button class="btn">ایجاد کد دعوت</button></form>'+(inviteCode?'<div class="notice">این کد فقط یک‌بار نمایش داده می‌شود. آن را خصوصی ارسال کن.<code class="code">'+esc(inviteCode)+'</code><button class="btn alt small" data-act="copy">کپی کد</button></div>':'')+'</div>'}
+function render(){if(!ready)return demo();if(!user)return authView();if(!me)return inviteEntry();let body=tab==='chats'?chatsView():tab==='gallery'?galleryView():tab==='members'?membersView():tab==='invites'&&me.role==='admin'?invitesView():home();frame(body);const scroll=document.getElementById('messages');if(scroll)scroll.scrollTop=scroll.scrollHeight}
+async function useAction(fn){if(loading)return;loading=true;try{await fn()}catch(e){toast(e.message||'درخواست انجام نشد. دوباره تلاش کن.')}finally{loading=false}}
+async function loadData(){
+const a=await sb.from('family_members').select('user_id,display_name,role').order('display_name');if(a.error)throw a.error;members=a.data||[];
+const b=await sb.from('conversation_members').select('conversation_id,user_id');if(b.error)throw b.error;participants=b.data||[];
+const ids=[...new Set(participants.filter(p=>p.user_id===user.id).map(p=>p.conversation_id))];
+rooms=[];if(ids.length){const c=await sb.from('conversations').select('id,title,kind,created_at').in('id',ids).order('created_at',{ascending:false});if(c.error)throw c.error;rooms=c.data||[]}
+if(roomId&&!rooms.some(x=>x.id===roomId))roomId=null;
+const ph=await sb.from('family_photos').select('id,caption,storage_path,created_at').order('created_at',{ascending:false}).limit(100);
+if(ph.error)throw ph.error;photos=await Promise.all((ph.data||[]).map(async p=>{const s=await sb.storage.from('family-gallery').createSignedUrl(p.storage_path,900);return {...p,signedUrl:s.data?.signedUrl||null}}));
+if(roomId)await loadMessages(false);
+render();
+}
+async function loadMessages(draw=true){if(!roomId)return;const q=await sb.from('messages').select('id,sender_id,body,created_at').eq('conversation_id',roomId).order('created_at',{ascending:true}).limit(200);if(q.error)throw q.error;messages=q.data||[];if(draw)render()}
+async function watchRoom(){if(channel){await sb.removeChannel(channel);channel=null}if(!roomId)return;channel=sb.channel('family-chat-'+roomId).on('postgres_changes',{event:'INSERT',schema:'public',table:'messages',filter:'conversation_id=eq.'+roomId},async(payload)=>{if(payload.new.sender_id!==user.id&&Notification.permission==='granted')new Notification('پیام جدید خانوادگی',{body:'یک پیام جدید دریافت کردی'});await loadMessages()}).subscribe()}
+async function boot(){const u=await sb.auth.getUser();user=u.data.user;if(!user){me=null;render();return}const m=await sb.from('family_members').select('user_id,display_name,role').eq('user_id',user.id).maybeSingle();if(m.error)throw m.error;me=m.data;if(me)await loadData();else render()}
+if(ready){try{const mod=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.8/+esm');sb=mod.createClient(config.supabaseUrl,config.supabaseAnonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});sb.auth.onAuthStateChange((_ev,session)=>{user=session?.user||null;setTimeout(()=>{boot().catch(e=>toast(e.message))},0)});await boot()}catch(e){app.innerHTML='<div class="authbox"><h2>اتصال برقرار نشد</h2><p class="muted">در حال حاضر سرویس پیام‌رسان قابل دسترس نیست. هیچ داده‌ای بدون اتصال امن نمایش داده نمی‌شود.</p></div>';toast(e.message)}}else render();
+document.addEventListener('click',e=>{
+const t=e.target.closest('[data-tab],[data-act],[data-room],[data-dm]');if(!t)return;
+if(t.dataset.tab){tab=t.dataset.tab;render();return}
+if(t.dataset.room){useAction(async()=>{roomId=t.dataset.room;await loadMessages(false);await watchRoom();render()});return}
+if(t.dataset.dm){useAction(async()=>{const {data,error}=await sb.rpc('start_direct_chat',{other_id:t.dataset.dm});if(error)throw error;roomId=data;tab='chats';await loadData();await watchRoom()});return}
+if(t.dataset.act==='logout')useAction(async()=>{if(channel)await sb.removeChannel(channel);const x=await sb.auth.signOut();if(x.error)throw x.error;user=null;me=null;render()});
+if(t.dataset.act==='copy')navigator.clipboard.writeText(inviteCode).then(()=>toast('کد کپی شد')).catch(()=>toast('امکان کپی خودکار وجود ندارد'));
+if(t.dataset.act==='newgroup'){const list=members.filter(m=>m.user_id!==user.id);const body='<div class="authbox" style="margin:30px auto"><h3>گروه جدید</h3><form id="groupForm"><label class="field">نام گروه<input name="title" minlength="2" maxlength="64" required></label>'+list.map(x=>'<label style="display:block;padding:5px"><input style="width:auto" type="checkbox" name="member" value="'+esc(x.user_id)+'"> '+esc(x.display_name)+'</label>').join('')+'<div class="row"><button class="btn">ساخت گروه</button><button class="btn alt" type="button" data-tab="chats">انصراف</button></div></form></div>';frame(body)}
+});
+document.addEventListener('submit',e=>{
+e.preventDefault();const form=e.target, fd=new FormData(form);
+if(form.id==='authForm')useAction(async()=>{const mode=e.submitter?.value||'signin';const email=String(fd.get('email')).trim(),password=String(fd.get('password'));const res=mode==='signup'?await sb.auth.signUp({email,password}):await sb.auth.signInWithPassword({email,password});if(res.error)throw res.error;toast(mode==='signup'?'اگر حساب قابل ثبت باشد، ایمیل تأیید برایت می‌آید.':'ورود انجام شد');await boot()});
+if(form.id==='redeemForm')useAction(async()=>{const v=await sb.rpc('redeem_family_invite',{invite_code:String(fd.get('code')).trim(),preferred_name:String(fd.get('name')).trim()});if(v.error)throw v.error;await boot();toast('به خانواده خوش آمدی!')});
+if(form.id==='sendForm')useAction(async()=>{const body=String(fd.get('body')).trim();if(!body||body.length>4000)return;const r=await sb.from('messages').insert({conversation_id:roomId,sender_id:user.id,body});if(r.error)throw r.error;form.reset();await loadMessages()});
+if(form.id==='groupForm')useAction(async()=>{const selected=fd.getAll('member').map(String);const r=await sb.rpc('create_family_group',{group_title:String(fd.get('title')).trim(),family_user_ids:selected});if(r.error)throw r.error;roomId=r.data;tab='chats';await loadData();await watchRoom()});
+if(form.id==='inviteForm')useAction(async()=>{const r=await sb.rpc('issue_family_invite',{invite_email:String(fd.get('email')).trim().toLowerCase()});if(r.error)throw r.error;inviteCode=r.data;render()});
+if(form.id==='photoForm')useAction(async()=>{const file=fd.get('photo');if(!(file instanceof File)||!file.size)throw Error('یک عکس انتخاب کن');if(file.size>5*1024*1024)throw Error('حجم تصویر بیشتر از ۵ مگابایت است');const ext={'image/jpeg':'jpg','image/png':'png','image/webp':'webp'}[file.type];if(!ext)throw Error('نوع تصویر پشتیبانی نمی‌شود');const path=user.id+'/'+crypto.randomUUID()+'.'+ext;const up=await sb.storage.from('family-gallery').upload(path,file,{upsert:false,contentType:file.type});if(up.error)throw up.error;const db=await sb.from('family_photos').insert({user_id:user.id,storage_path:path,caption:String(fd.get('caption')).slice(0,120)});if(db.error){await sb.storage.from('family-gallery').remove([path]);throw db.error}toast('عکس ثبت شد');await loadData()});
+});
+</script></body></html>
